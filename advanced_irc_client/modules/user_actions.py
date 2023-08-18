@@ -1,8 +1,11 @@
 from modules.connection import irc_socket
 
-# Funções para ações do usuário, como enviar mensagens, listar usuários, etc.
 def send_message(message):
-    # Resto do código para enviar mensagens...
+    if message:
+        irc_socket.send(f"PRIVMSG #canal :{message}\r\n".encode("utf-8"))
 
 def list_users():
-    # Resto do código para listar usuários...
+    irc_socket.send("NAMES #canal\r\n".encode("utf-8"))
+    response = irc_socket.recv(2048).decode("utf-8")
+    users = response.split(":")[2].split()[2:]
+    return users
