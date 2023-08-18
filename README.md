@@ -15,6 +15,20 @@ Bem-vindo ao Cliente IRC Avançado! Este é um cliente IRC completo e seguro com
 - Notificações para eventos importantes.
 - Interface gráfica interativa.
 
+## Comandos Disponíveis
+
+- `/msg <usuário> <mensagem>`: Envie uma mensagem privada para um usuário.
+- `/list`: Liste os usuários presentes no canal.
+- `/kick <usuário>`: Expulse um usuário do canal.
+- `/ban <usuário>`: Ban um usuário do canal.
+- `/op <usuário>`: Dê privilégios de operador a um usuário.
+- `/voice <usuário>`: Dê privilégios de voz a um usuário.
+- `/part`: Saia do canal.
+- `/topic <tópico>`: Defina o tópico do canal.
+- `/whois <usuário>`: Obtenha informações sobre um usuário.
+- `/history`: Exiba o histórico de mensagens do canal.
+
+
 ## Como Usar
 Instale as dependências executando o seguinte comando:
 
